@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>filmInfo Survey Form</title>
+         <link rel="stylesheet" href="Survey_form.css">
+         <!-- For favicon -->
+         <link
+      rel="shortcut icon"
+      type="image/png"
+      href="filmInfo_project/Web_logo/FilmInfo.jpg"
+    />
+    <!-- For fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+<body>
+         <div class="container">
+                  <header class="header">
+                    <h1 id="title" class="text-center">filmInfo Survey Form</h1>
+                    <p id="description" class="description text-center">
+                      Please take a few moments to complete this survey about our platform:) 
+                    </p>
+                  </header>
+                  <form id="survey-form">
+                    <div class="form-group">
+                      <label id="name-label" for="name">Name</label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        class="form-control"
+                        placeholder="Enter your name..."
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label id="email-label" for="email">Email</label>
+                      <input 
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control"
+                        placeholder="Enter your Email..."
+                        required
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label id="number-label" for="number"
+                        >Age<span class="clue">(optional)</span></label
+                      >
+                      <input
+                        type="number"
+                        name="age"
+                        id="number"
+                        min="10"
+                        max="99"
+                        class="form-control"
+                        placeholder="Age..."
+                      />
+                    </div>
+                    <div class="form-group">
+                      <p>How often do you watch Tvshows&Movies?</p>
+                      <select id="dropdown" name="role" class="form-control" required>
+                        <option disabled selected value>Select your option...</option>
+                        <option value="student">Extremely often</option>
+                        <option value="job">Very often</option>
+                        <option value="learner">Moderately often</option>
+                        <option value="preferNo">Slightly often</option>
+                        <option value="other">Not at all often</option>
+                      </select>
+                    </div>
+                    
+                
+                    <div class="form-group">
+                      <p>What is your favorite genre of movie?</p>
+                      <label>
+                        <input
+                          name="user-recommend"
+                          value="Drama"
+                          type="radio"
+                          class="input-radio"
+                          checked
+                        />Drama</label
+                      >
+                      <label>
+                        <input
+                          name="user-recommend"
+                          value="Horror"
+                          type="radio"
+                          class="input-radio"
+                        />Horror</label
+                      >
+                
+                      <label
+                        ><input
+                          name="user-recommend"
+                          value="Action/Adventure"
+                          type="radio"
+                          class="input-radio"
+                        />Action/Adventure</label
+                      >
+                      <label>
+                        <input
+                          name="user-recommend"
+                          value="Comedy"
+                          type="radio"
+                          class="input-radio"
+                        />Comedy</label
+                      >
+                
+                      <label
+                        ><input
+                          name="user-recommend"
+                          value="Science-Fiction"
+                          type="radio"
+                          class="input-radio"
+                        />Science-Fiction</label
+                      ><label>
+                        <input
+                          name="user-recommend"
+                          value="Romance"
+                          type="radio"
+                          class="input-radio"
+                        />Romance</label
+                      >
+                
+                      <label
+                        ><input
+                          name="user-recommend"
+                          value="Musical"
+                          type="radio"
+                          class="input-radio"
+                        />Musical</label
+                      >
+                    </div>
+                
+                    <div class="form-group">
+                      <p>
+                        What is your favorite feature of filmInfo?
+                      </p>
+                      <select id="most-like" name="mostLike" class="form-control" required>
+                        <option disabled selected value>Select your option</option>
+                        <option value="Design">Design</option>
+                        <option value="Contents">Contents</option>
+                        <option value="Watchlist">Watchlist</option>
+                        <option value="Content Advisory Guide">Content Advisory Guide</option>
+                      </select>
+                    </div>
+                
+                    <div class="form-group">
+                      <p>
+                        Would you like to add some features?
+                        <span class="clue">(Check all that apply)</span>
+                      </p>
+                
+                      <label
+                        ><input
+                          name="prefer"
+                          value="Top List and User List"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />Top List and User List</label
+                      >
+                      <label>
+                        <input
+                          name="prefer"
+                          value="Trivia,Goofs"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />Trivia,Goofs</label
+                      >
+                      <label
+                        ><input
+                          name="prefer"
+                          value="Quotes"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />Quotes</label
+                      >
+                      <label
+                        ><input
+                          name="prefer"
+                          value="News"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />News</label
+                      >
+                      <label
+                        ><input
+                          name="prefer"
+                          value="Exclusive videos"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />Exclusive videos</label
+                      >
+                      <label
+                        ><input
+                          name="prefer"
+                          value="Born today"
+                          type="checkbox"
+                          class="input-checkbox"
+                        />Born today</label
+                      >
+                    <div class="form-group">
+                      <p>Any comments or suggestions?</p>
+                      <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your comment here..."
+                      ></textarea>
+                    </div>
+                
+                    <div class="form-group">
+                      <button type="submit" id="submit" class="submit-button"><b>
+                        Submit
+                      </b>
+                        
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                   
+</body>
+</html>
